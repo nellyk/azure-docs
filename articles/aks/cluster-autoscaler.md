@@ -22,7 +22,7 @@ To adjust to changing application demands, such as between workdays and evenings
 
 * The **cluster autoscaler** periodically checks for pods that can't be scheduled on nodes because of resource constraints. The cluster then automatically increases the number of nodes. For more information, see [How does scale-up work?](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#how-does-scale-up-work).
 * The **[Horizontal Pod Autoscaler][horizontal-pod-autoscaler]** uses the Metrics Server in a Kubernetes cluster to monitor the resource demand of pods. If an application needs more resources, the number of pods is automatically increased to meet the demand.
-* **[Vertical Pod Autoscaler][vertical-pod-autoscaler]** (preview) automatically sets resource requests and limits on containers per workload based on past usage to ensure pods are scheduled onto nodes that have the required CPU and memory resources.
+* **[Vertical Pod Autoscaler][vertical-pod-autoscaler]** automatically sets resource requests and limits on containers per workload based on past usage to ensure pods are scheduled onto nodes that have the required CPU and memory resources.
 
 :::image type="content" source="media/cluster-autoscaler/cluster-autoscaler.png" alt-text="Screenshot of how the cluster autoscaler and horizontal pod autoscaler often work together to support the required application demands.":::
 
