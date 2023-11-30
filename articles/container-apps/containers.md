@@ -215,7 +215,11 @@ To use a container registry, you define the required fields in `registries` arra
   "registries": [{
     "server": "docker.io",
     "username": "my-registry-user-name",
-    "passwordSecretRef": "my-password-secret-name"
+    "passwordSecretRef": "my-password-secret-name-ref"
+  }],
+  "secrets": [{
+    "name": "my-password-secret-name-ref",
+    "value": "registryPassword"
   }]
 }
 ```
